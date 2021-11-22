@@ -2,7 +2,7 @@
   <div class="hello"> </div>
   
   <ul id="example-1">
-  <li v-for="item in items" :key="item.message">
+  <li v-show='toggle' v-for="item in items" :key="item.message">
     {{ item.message }}
   </li>
 </ul>
@@ -10,7 +10,6 @@
  <div id="example-2">
     <button @click='toggle = !toggle'>Afficher / Masquer</button>
   </div>
-   <p v-show='toggle'> Jean claude, Tom, Sophie, Lelou, Romy</p>
 </template>
 
 <script>
