@@ -1,8 +1,9 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <button @click ="alertMessage">Afficher</button>
-   <button @click ="alertMessage">Masquer</button>
+ 
+  
+
 </template>
 
 <script>
@@ -13,7 +14,9 @@ export default {
   components: {
     HelloWorld
   }
+
 }
+ 
 </script>
 
 <style>

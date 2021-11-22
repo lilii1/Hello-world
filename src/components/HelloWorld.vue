@@ -1,15 +1,21 @@
 <template>
   <div class="hello"> </div>
- 
+  
   <ul id="example-1">
   <li v-for="item in items" :key="item.message">
     {{ item.message }}
   </li>
 </ul>
- 
+
+ <div id="example-2">
+    <button @click='toggle = !toggle'>Afficher / Masquer</button>
+  </div>
+   <p v-show='toggle'> Jean claude, Tom, Sophie, Lelou, Romy</p>
 </template>
 
 <script>
+
+
 export default {
   name: 'HelloWorld',
   props: {
@@ -18,16 +24,21 @@ export default {
   data () {
       
       return {
+        toggle: true,
         items: [
         { message: 'Jean claude' },
         { message: 'Tom' },
         { message: 'Sophie' },
-        { message: 'Olivier' },
+        { message: 'Lelou' },
         { message: 'Romy' }
-      ]
+      ],
+
+  
     }
-    }
+    },
+  
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
