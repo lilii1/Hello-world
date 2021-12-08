@@ -10,6 +10,9 @@
  <div id="example-2">
     <button @click='toggle = !toggle'>Afficher / Masquer</button>
   </div>
+
+
+  
 </template>
 
 <script>
