@@ -27,6 +27,8 @@
       <ExpireDate msg="" />
         <button v-on:click="step='step4',say('Il reste 1 étape')">Valider</button>
   </div>
+
+  
  
  <div v-if="step === 'step4'">
    <Liste msg=""/>
@@ -34,19 +36,21 @@
   <div id="app">
     <SearchAutocomplete
       :items="[
-        'Apple',
-        'Banana',
-        'Orange',
-        'Mango',
-        'Pear',
-        'Peach',
-        'Grape',
-        'Tangerine',
-        'Pineapple'
+        'Bitcoin', 
+        'Ethereum',
+        'Binance Coin',
+        'Tether',
+        'Solana',
+        'Cardano',
+        'USD Coin',
+        'XRP', 
+        'Polkadot',
+        'Terra'
       ]"
     />
   </div>
-   <button v-on:click="say('Toutes vos informations sont enregistrées, merci de votre')">Valider</button>
+  
+   <button v-on:click="say('Toutes vos informations sont enregistrées, merci de votre participation :)')">Valider</button>
 
  </div>
 </template>
@@ -86,7 +90,9 @@ export default {
     Email,
     Phone,
    SearchAutocomplete,
-   Liste
+   Liste,
+   
+  
     
   },
   data() {

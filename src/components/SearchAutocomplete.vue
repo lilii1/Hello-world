@@ -31,13 +31,14 @@
       </li>
     </ul>
   </div>
+  
 </template>
 
 <script>
   export default {
     name: 'SearchAutocomplete',
     props: {
-      items: {
+      items: { 
         type: Array,
         required: false,
         default: () => [],
@@ -55,7 +56,8 @@
         search: '',
         isLoading: false,
         arrowCounter: -1,
-      };
+          toggle: true,
+        };
     },
     watch: {
       items: function (value, oldValue) {
